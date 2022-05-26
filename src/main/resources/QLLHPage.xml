@@ -1,0 +1,54 @@
+
+<suite name="QLLHPage">
+<!--way 1-->
+	<!-- <test name="SuaHoaCuoi1">
+	<parameter name="browser" value="chrome" />
+	<parameter name="tenDangNhap" value="admin"/>
+	<parameter name="password" value="admin"/>
+	<parameter name="tenLoaiHoa" value="Hoa Cưới 1"/>
+	<parameter name="tenLoaiHoaMoi" value="Hoa Cưới 001"/>
+		
+		<classes>
+			<class name="tests.QuanLyLoaiHoaTest" />
+				<methods>
+	        		<include name="verifySuccessEdit" />
+	      		</methods>
+			
+		</classes>
+
+	</test> 
+
+	<test name="SuaHoaTinhYeu1">
+	<parameter name="browser" value="chrome" />
+	<parameter name="tenDangNhap" value="admin"/>
+	<parameter name="password" value="admin"/>
+	<parameter name="tenLoaiHoa" value="Hoa Tình Yêu 1"/>
+	<parameter name="tenLoaiHoaMoi" value="Hoa Tình Yêu 001"/>
+		
+		<classes>
+			<class name="tests.QuanLyLoaiHoaTest" />
+				<methods>
+	        		<include name="verifySuccessEdit" />
+	      		</methods>
+		</classes>
+	</test> -->
+
+	<test name="ThemMoi">
+	<parameter name="browser" value="chrome" />
+	<parameter name="tenDangNhap" value="admin"/>
+	<parameter name="password" value="admin"/>
+	<!-- <parameter name="QLLH_tenHoaMoi" value="Hoa 3"/>-->
+	
+	
+		<classes>
+			<class name="tests.QuanLyLoaiHoaTest" />
+				<methods>
+	        		<!-- <include name="QLLH_ThemHoa" />-->
+					<include name="checkScrollbar" />
+	      		</methods>
+		</classes>
+	</test> 
+
+	
+
+</suite>

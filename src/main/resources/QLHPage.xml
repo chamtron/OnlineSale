@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QLHPage">
+<!--way 1-->
+	<test name="ThemHoaMoi">
+	<parameter name="browser" value="chrome" />
+	<parameter name="tenDangNhap" value="admin"/>
+	<parameter name="password" value="admin"/>
+	
+	
+		<!-- <groups>
+			<run>
+				<include name="shopping"/>
+			</run>
+		</groups>-->
+		
+		<classes>
+			<class name="tests.QuanLyHoaTest" />
+			<!-- <class name="tests.QuanLyHoaTest" />
+			<class name="tests.QuanLyLoaiHoaTest" />-->
+		</classes>
+	</test> <!-- SampleTestNG -->
+
+
+
+
+</suite> 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OnlineSale">
+<!--way 1-->
+	<test name="Login_Fail_1">
+	<parameter name="browser" value="chrome" />
+	<parameter name="tenDangNhap" value="admin"/>
+	<parameter name="password" value="admin12"/>
+	
+	<!--<parameter name="tenDangNhap" value="admin"/>
+	<parameter name="password" value="123"/>-->
+		<!-- <groups>
+			<run>
+				<include name="shopping"/>
+			</run>
+		</groups>-->
+		
+		<classes>
+			<class name="tests.RegisterPageTest" />
+			<!-- <class name="tests.QuanLyHoaTest" />
+			<class name="tests.QuanLyLoaiHoaTest" />-->
+		</classes>
+	</test> <!-- SampleTestNG -->
+
+	<test name="Login_Fail_2">
+	<parameter name="browser" value="chrome" />
+	<parameter name="tenDangNhap" value="1"/>
+	<parameter name="password" value="2"/>
+	
+	<classes>
+			<class name="tests.RegisterPageTest" />
+			
+		</classes>
+	</test>
+<!--way 2-->
+
+
+
+</suite> <!-- DemoSuite -->
